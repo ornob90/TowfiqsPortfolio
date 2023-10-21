@@ -9,6 +9,12 @@ export default {
         "black-dark": "0E0E0E",
         "black-gray": "343434",
       },
+      fontFamily: {
+        generalBold: ["GeneralSansBold", "sans-serif"],
+        generalSemibold: ["GeneralSansSemibold", "sans-serif"],
+        generalRegular: ["GeneralSansRegular", "sans-serif"],
+        generalLight: ["GeneralSansLight", "sans-serif"],
+      },
     },
   },
   plugins: [require("daisyui")],

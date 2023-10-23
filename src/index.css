@@ -29,3 +29,11 @@
     url("./fonts/GeneralSans-Light.woff") format("woff"),
     url("./fonts/GeneralSans-Light.woff2") format("woff2");
 }
+
+@layer {
+  .hero-bg {
+    background: linear-gradient(to right, rgb(0 0 0 / 80%), rgb(33 33 33 / 80%)),
+      url("./assets/hero-bg.png");
+    background-size: cover;
+  }
+}

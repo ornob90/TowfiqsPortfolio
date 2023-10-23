@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        secondary: "E31B6D",
-        nav: "1A1D26",
-        "black-dark": "0E0E0E",
-        "black-gray": "343434",
+        secondary: "#E31B6D",
+        nav: "#1A1D26",
+        "black-dark": "#0E0E0E",
+        "black-gray": "#343434",
       },
       fontFamily: {
         generalBold: ["GeneralSansBold", "sans-serif"],

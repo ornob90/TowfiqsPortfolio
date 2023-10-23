@@ -36,4 +36,11 @@
       url("./assets/hero-bg.png");
     background-size: cover;
   }
+
+  /* .hero-bg {
+    background: url("./assets/hero-bg.png"),
+      lightgray -10px -18.68px / 100.709% 104.909% no-repeat;
+
+    background-size: cover;
+  } */
 }

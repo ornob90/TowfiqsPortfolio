@@ -11,6 +11,14 @@ const Hero = () => {
         alt=""
         className="h-screen w-full object-cover"
       /> */}
+
+      {/* <video
+        className="w-full h-full object-cover opacity-20"
+        src="./assets/hero-background.mp4"
+        autoPlay
+        loop
+        muted
+      /> */}
       <Container className="absolute top-0 left-[5%]  h-full">
         <HeroHeader />
         <HeroContent />

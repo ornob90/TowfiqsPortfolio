@@ -1,12 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import Hero from "./Sections/Hero/Hero";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <section className="max-w-[1440px] mx-auto">
+      <Hero />
+    </section>
+  );
 }
 
 export default App;

@@ -11,6 +11,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { AiFillPhone } from "react-icons/ai";
 import { SlSocialLinkedin } from "react-icons/sl";
+import Button from "../../components/shared/Button";
 
 const About = () => {
   return (
@@ -44,8 +45,35 @@ const About = () => {
         </div>
 
         {/* project cell */}
-        <div className="border border-black col-span-2 row-span-6 project bg-black-gray text-white rounded-lg p-3">
-          <h2 className="text-2xl font-generalBold">PROJECTS</h2>
+        <div className="border border-black col-span-2 row-span-6 project bg-black-gray text-white rounded-lg p-3 ">
+          <div className="h-max flex flex-col gap-2">
+            <h2 className="text-2xl font-generalBold">PROJECTS</h2>
+            <p className="text-light-gray text-[12px] font-generalBold">
+              Unveil My Creative Projects Below
+            </p>
+          </div>
+          <div className="flex flex-col items-end mt-12 justify-between h-[60%]">
+            <div className="border border-[rgba(217, 217, 217, 0.47)] w-full p-2 font-generalSemiBold rounded-md bg-[#2D2D2D] shadow-lg">
+              <p>Cuisine Share</p>
+              <div className="flex gap-4 mt-4 items-center">
+                <img src="./assets/icons/html-sm-sm.png" alt="" />
+
+                <img src="./assets/icons/tailwind-sm-sm.png" alt="" />
+
+                <img src="./assets/icons/react-sm-sm.png" alt="" />
+
+                <img src="./assets/icons/firebase-sm-sm.png" alt="" />
+              </div>
+              <div className="flex justify-end mt-2">
+                <p className="bg-white w-[20px] h-[20px] rounded-full"></p>
+              </div>
+            </div>
+            <div className="bg-dark">
+              <Button className="flex items-center gap-2 bg-black-dark rounded-lg py-2 px-4 text-sm">
+                More <FaArrowRightFromBracket />
+              </Button>
+            </div>
+          </div>
         </div>
 
         {/* skill cell */}

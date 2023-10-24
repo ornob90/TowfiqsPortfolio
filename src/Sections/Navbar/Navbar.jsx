@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 left-0 bg-nav">
-      <Container className="flex justify-between items-center text-[14px] font-bold   ">
+      <Container className="flex justify-between items-center text-[14px] font-generalBold   ">
         <img
           src="/assets/logo.png"
           alt=""

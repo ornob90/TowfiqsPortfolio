@@ -5,7 +5,7 @@ import HeroContent from "./HeroContent";
 
 const Hero = () => {
   return (
-    <div className="relative hero-bg h-screen min-h-[200px] text-white font-bold">
+    <div className="relative hero-bg h-screen min-h-[200px] text-white font-generalBold">
       {/* <img
         src="./assets/hero-bg.png"
         alt=""

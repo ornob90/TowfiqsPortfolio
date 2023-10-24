@@ -8,6 +8,7 @@ export default {
         nav: "#1A1D26",
         "black-dark": "#0E0E0E",
         "black-gray": "#343434",
+        title: "#323741",
       },
       fontFamily: {
         generalBold: ["GeneralSansBold", "sans-serif"],

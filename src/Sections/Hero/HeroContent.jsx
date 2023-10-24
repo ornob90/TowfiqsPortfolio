@@ -16,8 +16,8 @@ const HeroContent = () => {
           ABOUT ME
         </Button>
 
-        <div className="-order-2 sm:order-1 col-span-6  flex justify-center items-center sm:block">
-          <Button className=" bg-white text-black border border-secondary w-full sm:w-auto sm:px-10 ">
+        <div className="order-2 sm:order-1 col-span-6  flex justify-center items-center sm:block">
+          <Button className=" bg-white text-black border border-secondary w-full sm:w-auto sm:px-12 ">
             HIRE ME
           </Button>
         </div>

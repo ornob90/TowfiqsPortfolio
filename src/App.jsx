@@ -1,10 +1,16 @@
+import About from "./Sections/About/About";
 import Hero from "./Sections/Hero/Hero";
+import Navbar from "./Sections/Navbar/Navbar";
 
 function App() {
   return (
-    <section className="max-w-[1440px] mx-auto">
+    <div className="max-w-[1440px] mx-auto">
       <Hero />
-    </section>
+      <section className="relative">
+        <Navbar />
+        <About />
+      </section>
+    </div>
   );
 }
 

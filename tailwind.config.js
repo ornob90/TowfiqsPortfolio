@@ -8,6 +8,7 @@ export default {
         nav: "#1A1D26",
         "black-dark": "#0E0E0E",
         "black-gray": "#343434",
+        "light-gray": "#B5B5B5",
         title: "#323741",
       },
       fontFamily: {

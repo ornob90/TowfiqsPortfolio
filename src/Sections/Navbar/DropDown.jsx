@@ -2,7 +2,7 @@ import React from "react";
 import { CiMenuFries } from "react-icons/ci";
 import Container from "../../components/shared/Container";
 
-const DropDown = ({ navLinks, menu }) => {
+const DropDown = ({ navLinks, menu, setMenu }) => {
   return (
     <div
       className={`lg:hidden absolute  w-[100vw] min-h-[200px] bg-white ${
@@ -17,7 +17,11 @@ const DropDown = ({ navLinks, menu }) => {
 
         <ul>
           {navLinks.map((link) => (
-            <li key={link} className="pb-4 pt-2 border-b  border-b-black">
+            <li
+              key={link}
+              className="pb-4 pt-2 border-b  border-b-black"
+              onClick={() => setMenu(!menu)}
+            >
               {link}
             </li>
           ))}

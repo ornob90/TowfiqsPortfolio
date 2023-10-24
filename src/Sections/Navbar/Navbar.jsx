@@ -46,7 +46,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <DropDown navLinks={navLinks} menu={menu} />
+        <DropDown navLinks={navLinks} menu={menu} setMenu={setMenu} />
       </Container>
     </nav>
   );

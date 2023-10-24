@@ -10,7 +10,7 @@ const HeroHeader = () => {
         className="w-[33%] sm:w-[25%] md:w-[18%] lg:w-[13%]"
       />
       <div>
-        <Button className="bg-[rgba(0, 0, 0, 0.46)] border border-white text-white text-[10px] md:text-base">
+        <Button className="bg-[rgba(0, 0, 0, 0.46)] border border-white text-white text-[10px] md:text-base px-5 py-1">
           RESUME
         </Button>
       </div>

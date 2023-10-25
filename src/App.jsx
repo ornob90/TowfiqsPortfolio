@@ -2,6 +2,7 @@ import About from "./Sections/About/About";
 import AboutMD from "./Sections/About/AboutMD";
 import Hero from "./Sections/Hero/Hero";
 import Navbar from "./Sections/Navbar/Navbar";
+import Projects from "./Sections/Projects/Projects";
 import Skills from "./Sections/Skills/Skills";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <About />
         <AboutMD />
         <Skills />
+        <Projects />
       </section>
     </div>
   );

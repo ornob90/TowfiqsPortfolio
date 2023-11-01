@@ -7,9 +7,9 @@ import Skills from "./Sections/Skills/Skills";
 
 function App() {
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <div className="max-w-[1440px] mx-auto relative">
       <Hero />
-      <section className="relative">
+      <section className="sticky top-0 z-10 bg-white">
         <Navbar />
         <About />
         <AboutMD />

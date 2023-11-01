@@ -6,7 +6,7 @@ import HeroContent from "./HeroContent";
 const Hero = () => {
   return (
     <div
-      className="relative hero-bg h-screen min-h-[200px] text-white font-generalBold"
+      className=" hero-bg h-screen min-h-[200px] text-white font-generalBold sticky top-0 "
       id="home"
     >
       {/* <img

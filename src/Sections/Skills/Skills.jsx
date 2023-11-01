@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="bg-[#D9D9D9] relative -z-20  min-h-screen" id="skills">
+    <div className="bg-[#D9D9D9] relative  z-2  min-h-screen" id="skills ">
       <Container className="py-1">
         <SectionHeader name="SKILLS" />
 

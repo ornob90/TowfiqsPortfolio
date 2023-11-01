@@ -5,8 +5,8 @@ import CuisineShare from "./CuisineShare/CuisineShare";
 
 const Projects = () => {
   return (
-    <Container>
-      <SectionHeader name="PROJECTS" />
+    <Container className=" w-[100%] bg-transparent h-[80vh] " id="projects">
+      <SectionHeader name="PROJECTS" z={30} />
       <CuisineShare />
     </Container>
   );

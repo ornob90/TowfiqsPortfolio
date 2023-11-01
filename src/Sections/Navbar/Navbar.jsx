@@ -4,6 +4,7 @@ import DropDown from "./DropDown";
 import { CiMenuFries } from "react-icons/ci";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-scroll";
+import Button from "../../components/shared/Button";
 
 const Navbar = () => {
   const navLinks = ["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT"];
@@ -46,11 +47,7 @@ const Navbar = () => {
               {link}
             </Link>
           ))} */}
-          <Link
-            spy={true}
-            smooth={true}
-            offset={300}
-            duration={500}
+          <button
             onClick={() => handleActiveLink("HOME")}
             // to="home"
             className={`${
@@ -58,7 +55,7 @@ const Navbar = () => {
             } py-6 px-6 cursor-pointer hidden lg:block`}
           >
             HOME
-          </Link>
+          </button>
           <Link
             spy={true}
             smooth={true}

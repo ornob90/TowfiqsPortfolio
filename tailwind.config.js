@@ -10,6 +10,7 @@ export default {
         "black-gray": "#343434",
         "light-gray": "#B5B5B5",
         title: "#323741",
+        "dark-mode": "#B7B7B7",
       },
       fontFamily: {
         generalBold: ["GeneralSansBold", "sans-serif"],

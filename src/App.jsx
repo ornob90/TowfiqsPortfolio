@@ -1,5 +1,6 @@
 import About from "./Sections/About/About";
 import AboutMD from "./Sections/About/AboutMD";
+import Contact from "./Sections/Contact/Contact";
 import Hero from "./Sections/Hero/Hero";
 import Navbar from "./Sections/Navbar/Navbar";
 import Projects from "./Sections/Projects/Projects";
@@ -15,6 +16,7 @@ function App() {
         <AboutMD />
         <Skills />
         <Projects />
+        <Contact />
       </section>
     </div>
   );

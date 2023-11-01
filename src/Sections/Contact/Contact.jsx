@@ -33,7 +33,7 @@ const Contact = () => {
             className=" border-b border-[#343434] text-[#6F6F6F] text-sm caret-white focus:outline-none bg-transparent w-full md:w-3/5 lg:w-2/5 mt-12"
           />
         </div>
-        <button className="bg-[#FFFFFF] text-[#000000] border border-black px-8 py-2 mb-4 text-sm active:scale-95 duration-[.4s] font-generalSemibold">
+        <button className="bg-[#FFFFFF] text-[#000000] border border-black px-6 py-1 md:px-8 md:py-2 mb-4 text-[12px] lg:text-sm active:scale-95 duration-[.4s] font-generalSemibold">
           SEND
         </button>
       </Container>

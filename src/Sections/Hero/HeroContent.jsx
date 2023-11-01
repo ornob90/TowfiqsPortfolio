@@ -13,11 +13,17 @@ const HeroContent = () => {
       </h3>
 
       <div className="grid grid-cols-6 gap-x-1 gap-y-2 sm:flex sm:justify-center sm:items-center  sm:gap-8 text-[10px] sm:text-base w-[80%] sm:w-full">
-        <Link spy={true} smooth={true} offset={-100} duration={700} to="about">
-          <Button className="py-2 order-1 col-span-3 sm:bg-[rgba(0, 0, 0, 0.46)] border border-white w-full sm:w-max sm:px-8  ">
+        <Button className="py-2 order-1 col-span-3 sm:bg-[rgba(0, 0, 0, 0.46)] border border-white w-full sm:w-max sm:px-8  ">
+          <Link
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={700}
+            to="about"
+          >
             ABOUT ME
-          </Button>
-        </Link>
+          </Link>
+        </Button>
 
         <div className="order-2 sm:order-1 col-span-6  flex justify-center items-center sm:block">
           <Button className="py-2  bg-white text-black border border-secondary w-full sm:w-auto sm:px-12 ">
@@ -25,7 +31,7 @@ const HeroContent = () => {
           </Button>
         </div>
 
-        <Button className="py-2 order-1 bg-[rgba(0, 0, 0, 0.46)] border border-white sm:px-8  col-span-3">
+        <Button className="py-2 order-1 bg-[rgba(0, 0, 0, 0.46)] border border-white sm:px-8 col-span-3">
           MY WORK
         </Button>
       </div>

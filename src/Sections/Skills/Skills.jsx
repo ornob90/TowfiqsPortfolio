@@ -2,10 +2,11 @@ import React from "react";
 import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import skillsList from "./skillsList";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="bg-[#D9D9D9] relative -z-20">
+    <div className="bg-[#D9D9D9] relative -z-20  min-h-screen" id="skills">
       <Container className="py-1">
         <SectionHeader name="SKILLS" />
 
@@ -28,7 +29,13 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <div className="absolute top-0 right-0 w-[46%] h-full bg-secondary -z-10 hidden lg:block"></div>
+
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "46%" }}
+          transition={{ duration: 0.6 }}
+          className="absolute top-0 right-0 h-full bg-secondary -z-10 hidden lg:block overflow-hidden"
+        ></motion.div>
       </Container>
     </div>
   );

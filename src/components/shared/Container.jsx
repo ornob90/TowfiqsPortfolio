@@ -1,6 +1,8 @@
-const Container = ({ children, className }) => {
+const Container = ({ children, className, id }) => {
   return (
-    <section className={`${className} mx-auto w-[90%]`}>{children}</section>
+    <section className={`${className} mx-auto w-[90%]`} id={id}>
+      {children}
+    </section>
   );
 };
 

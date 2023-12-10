@@ -23,7 +23,7 @@ const AboutMD = () => {
           <img
             src="./assets/myPic.png"
             alt=""
-            className="w-full h-full object-cover rounded-lg"
+            className="object-cover w-full h-full rounded-lg"
           />
         </div>
 
@@ -31,17 +31,17 @@ const AboutMD = () => {
           <img
             src="./assets/myPic.png"
             alt=""
-            className="w-full h-full object-cover rounded-lg"
+            className="object-cover w-full h-full rounded-lg"
           />
         </div>
 
         {/* about cell */}
-        <div className="hidden md:block -order-2 md:order-1 border border-black  about-md bg-black-dark text-white px-3 pt-3 rounded-lg">
+        <div className="hidden px-3 pt-3 text-white border border-black rounded-lg md:block -order-2 md:order-1 about-md bg-black-dark">
           <div className="flex justify-between mb-6">
             <h2 className="text-2xl font-generalBold">I'M TOWFIQ</h2>
             <FaArrowRightFromBracket className="text-2xl " />
           </div>
-          <p className="font-generalLight text-sm lg:text-base p-1">
+          <p className="p-1 text-sm font-generalLight lg:text-base">
             “Emerging <SpanBold> web developer</SpanBold> with{" "}
             <SpanBold> good fundamentals</SpanBold>, turning design into
             <SpanBold> user-friendly websites</SpanBold>. Committed to
@@ -53,12 +53,12 @@ const AboutMD = () => {
         </div>
 
         {/* about cell */}
-        <div className="md:hidden -order-2 md:order-1 border border-black  bg-black-dark text-white px-3 pt-3 rounded-lg">
+        <div className="px-3 pt-3 text-white border border-black rounded-lg md:hidden -order-2 md:order-1 bg-black-dark">
           <div className="flex justify-between mb-6">
             <h2 className="text-2xl font-generalBold">I'M TOWFIQ</h2>
             <FaArrowRightFromBracket className="text-2xl " />
           </div>
-          <p className="font-generalLight text-sm lg:text-base p-1">
+          <p className="p-1 text-sm font-generalLight lg:text-base">
             “Emerging <SpanBold> web developer</SpanBold> with{" "}
             <SpanBold> good fundamentals</SpanBold>, turning design into
             <SpanBold> user-friendly websites</SpanBold>. Committed to
@@ -70,8 +70,8 @@ const AboutMD = () => {
         </div>
 
         {/* project cell */}
-        <div className="order-6 border border-black  project-md bg-black-gray text-white rounded-lg p-3 hidden md:block">
-          <div className="h-max flex flex-col gap-2">
+        <div className="order-6 hidden p-3 text-white border border-black rounded-lg project-md bg-black-gray md:block">
+          <div className="flex flex-col gap-2 h-max">
             <h2 className="text-2xl font-generalBold">PROJECTS</h2>
             <p className="text-light-gray text-[12px] font-generalBold">
               Unveil My Creative Projects Below
@@ -80,7 +80,7 @@ const AboutMD = () => {
           <div className="flex flex-col items-end mt-12 justify-between h-[60%]">
             <div className="border border-[rgba(217, 217, 217, 0.47)] w-full p-2 font-generalSemiBold rounded-md bg-[#2D2D2D] shadow-lg">
               <p>Cuisine Share</p>
-              <div className="flex gap-4 mt-4 items-center">
+              <div className="flex items-center gap-4 mt-4">
                 <img src="./assets/icons/html-sm-sm.png" alt="" />
 
                 <img src="./assets/icons/tailwind-sm-sm.png" alt="" />
@@ -93,8 +93,8 @@ const AboutMD = () => {
                 <p className="bg-white w-[20px] h-[20px] rounded-full"></p>
               </div>
             </div>
-            <div className="bg-dark pt-2 lg:pt-0">
-              <Button className="flex items-center gap-2 bg-black-dark rounded-lg py-2 px-4 text-sm">
+            <div className="pt-2 bg-dark lg:pt-0">
+              <Button className="flex items-center gap-2 px-4 py-2 text-sm rounded-lg bg-black-dark">
                 More <FaArrowRightFromBracket />
               </Button>
             </div>
@@ -102,7 +102,7 @@ const AboutMD = () => {
         </div>
 
         {/* skill cell */}
-        <div className=" -order-1 md:order-3 border border-black  skills-md p-3 bg-black-gray text-white rounded-lg  flex-col justify-between hidden md:flex">
+        <div className="flex-col justify-between hidden p-3 text-white border border-black rounded-lg  -order-1 md:order-3 skills-md bg-black-gray md:flex">
           <div className="flex justify-between mb-6">
             <h2 className="text-2xl font-generalBold">SKILLS</h2>
             <FaArrowRightFromBracket className="text-2xl " />
@@ -118,56 +118,56 @@ const AboutMD = () => {
             <img src="./assets/icons/node-sm.png" alt="" className="w-[8%]" />
             <img src="./assets/icons/mongo-sm.png" alt="" className="w-[8%]" />
 
-            <p className="font-generalBold   text-3xl">. . .</p>
+            <p className="text-3xl font-generalBold">. . .</p>
           </div>
         </div>
 
         {/* social cell */}
-        <div className=" -order-1 md:order-4 border border-black  social-md bg-black-dark text-white p-3  justify-between flex-col rounded-lg hidden md:flex ">
+        <div className="flex-col justify-between hidden p-3 text-white border border-black rounded-lg  -order-1 md:order-4 social-md bg-black-dark md:flex">
           <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-generalBold">SOCIAL</h2>
             <p className="text-light-gray text-[12px] font-generalBold">
               Explore My Online Presence and Connect with Me on Social Platforms
             </p>
           </div>
-          <div className="flex gap-2 items-center pt-2 lg:pt-0">
-            <div className=" bg-white text-3xl lg:text-5xl text-black rounded-md p-1">
+          <div className="flex items-center gap-2 pt-2 lg:pt-0">
+            <div className="p-1 text-3xl text-black bg-white rounded-md  lg:text-5xl">
               <FaGithub />
             </div>
-            <div className=" text-lg lg:text-4xl rounded-md p-3 bg-black text-white">
+            <div className="p-3 text-lg text-white bg-black rounded-md  lg:text-4xl">
               <SlSocialLinkedin />
             </div>
-            <div className=" bg-white text-3xl lg:text-5xl text-black rounded-md p-1">
+            <div className="p-1 text-3xl text-black bg-white rounded-md  lg:text-5xl">
               <BiLogoFacebookCircle />
             </div>
           </div>
         </div>
 
-        <div className=" -order-1 md:order-4 border border-black  bg-black-dark text-white p-3  justify-between flex-col rounded-lg flex md:hidden ">
+        <div className="flex flex-col justify-between p-3 text-white border border-black rounded-lg  -order-1 md:order-4 bg-black-dark md:hidden">
           <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-generalBold">SOCIAL</h2>
             <p className="text-light-gray text-[12px] font-generalBold">
               Explore My Online Presence and Connect with Me on Social Platforms
             </p>
           </div>
-          <div className="flex gap-2 items-center pt-2 lg:pt-0">
-            <div className=" bg-white text-3xl lg:text-5xl text-black rounded-md p-1">
+          <div className="flex items-center gap-2 pt-2 lg:pt-0">
+            <div className="p-1 text-3xl text-black bg-white rounded-md  lg:text-5xl">
               <FaGithub />
             </div>
-            <div className=" text-lg lg:text-4xl rounded-md p-3 bg-black text-white">
+            <div className="p-3 text-lg text-white bg-black rounded-md  lg:text-4xl">
               <SlSocialLinkedin />
             </div>
-            <div className=" bg-white text-3xl lg:text-5xl text-black rounded-md p-1">
+            <div className="p-1 text-3xl text-black bg-white rounded-md  lg:text-5xl">
               <BiLogoFacebookCircle />
             </div>
           </div>
         </div>
 
         {/* resume cell */}
-        <div className="order-5 border border-black  resume-md font-generalBold  justify-between flex-col p-2 bg-black-dark rounded-lg text-white hidden md:flex">
+        <div className="flex-col justify-between order-5 hidden p-2 text-white border border-black rounded-lg resume-md font-generalBold bg-black-dark md:flex">
           <BsFillPersonLinesFill className="text-2xl" />
           <p className="text-light-gray text-[12px]"> LEARN MORE ABOUT ME</p>
-          <div className="flex justify-between items-center">
+          <div className="flex items-center justify-between">
             <h2 className="text-xl">
               SEE MY <span className="text-secondary">RESUME</span>
             </h2>
@@ -177,14 +177,14 @@ const AboutMD = () => {
         </div>
 
         {/* contact cell */}
-        <div className="order-6 border border-black  contact-md bg-black-gray text-white p-3 rounded-lg  flex-col justify-between lg:block hidden md:flex">
-          <h2 className="text-2xl font-generalBold pb-4">GET IN TOUCH</h2>
-          <div className="flex justify-between items-center text-xl">
-            <div className="flex gap-2 items-center">
-              <div className="bg-black p-1 rounded-full">
+        <div className="flex-col justify-between order-6 hidden p-3 text-white border border-black rounded-lg contact-md bg-black-gray lg:block md:flex">
+          <h2 className="pb-4 text-2xl font-generalBold">GET IN TOUCH</h2>
+          <div className="flex items-center justify-between text-xl">
+            <div className="flex items-center gap-2">
+              <div className="p-1 bg-black rounded-full">
                 <FaLocationDot className="" />
               </div>
-              <div className="bg-black p-1 rounded-full">
+              <div className="p-1 bg-black rounded-full">
                 <AiFillPhone className="" />
               </div>
             </div>

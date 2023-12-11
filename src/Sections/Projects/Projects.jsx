@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import CuisineShare from "./CuisineShare/CuisineShare";
+import ShoeSphere from "./ShoeSphere/ShoeSphere";
 
 const Projects = () => {
   return (
@@ -10,6 +11,7 @@ const Projects = () => {
       id="projects"
     >
       <SectionHeader name="PROJECTS" z={30} />
+      <ShoeSphere />
       <CuisineShare />
     </Container>
   );

@@ -6,9 +6,9 @@ const CuisineShare = () => {
   return (
     <div className="mt-20 mb-28">
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className=" lg:w-[90%] mb-8 lg:mb-0">
+        <div className=" lg:w-[90%] mb-8 lg:mb-0 p-2 bg-yellow-100 h-max rounded-md">
           <img
-            className="w-full h-[90%] object-cover"
+            className="w-full h-[90%] object-cover  rounded-md"
             src="./cuisine/home.png"
             alt=""
           />
@@ -58,9 +58,15 @@ const CuisineShare = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16">
-        <img src="./cuisine/newspeed.png" alt="" />
-        <img src="./cuisine/profile.png" alt="" />
-        <img src="./cuisine/favorite.png" alt="" />
+        <div className="p-2 bg-yellow-200 rounded-md h-max">
+          <img className="rounded-md" src="./cuisine/newspeed.png" alt="" />
+        </div>
+        <div className="p-2 bg-yellow-200 rounded-md h-max">
+          <img className="rounded-md" src="./cuisine/profile.png" alt="" />
+        </div>
+        <div className="p-2 bg-yellow-200 rounded-md h-max">
+          <img className="rounded-md" src="./cuisine/favorite.png" alt="" />
+        </div>
       </div>
     </div>
   );

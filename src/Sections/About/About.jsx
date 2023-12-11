@@ -33,7 +33,7 @@ const About = () => {
             <h2 className="text-2xl font-generalBold">I'M TOWFIQ</h2>
             <FaArrowRightFromBracket className="text-2xl " />
           </div>
-          <p className="font-generalLight">
+          <p className="font-poppins">
             “Emerging <SpanBold> web developer</SpanBold> with{" "}
             <SpanBold> good fundamentals</SpanBold>, turning design into
             <SpanBold> user-friendly websites</SpanBold>. Committed to

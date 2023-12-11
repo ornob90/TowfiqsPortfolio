@@ -10,12 +10,13 @@ function App() {
   return (
     <div className="max-w-[1440px] mx-auto relative">
       <Hero />
-      <section className="sticky top-0 z-10 bg-white">
+      <section className="sticky top-0 z-10 bg-white dark:bg-[#141616]">
         <Navbar />
         <About />
         <AboutMD />
         <Skills />
         <Projects />
+
         <Contact />
       </section>
     </div>

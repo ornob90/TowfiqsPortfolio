@@ -8,11 +8,11 @@ import Tech from "../../../components/shared/Tech";
 
 const ShoeSphere = () => {
   return (
-    <section className="mt-5 mb-40">
+    <section className="mt-5 mb-40 dark:text-white">
       <ProjectTitle title="E-Commerce" />
 
       {/* First Grid */}
-      <div className="flex flex-col flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="flex flex-col flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ">
         {/* Others Image */}
         <div className=" -order-2 lg:order-1 grid grid-cols-1 sm:grid-cols-2 gap-2">
           <div className="p-2 bg-gray-200 h-max rounded-md">
@@ -76,7 +76,7 @@ const ShoeSphere = () => {
 
           {/* Call To action button */}
           <div className="mt-14 flex gap-4">
-            <Button className="text-sm md:text-base border border-black text-black py-2 px-7">
+            <Button className="text-sm md:text-base border border-black dark:border-white text-black dark:text-white py-2 px-7">
               Code
             </Button>
             <Button className="text-sm md:text-base bg-black text-white py-2 px-8">

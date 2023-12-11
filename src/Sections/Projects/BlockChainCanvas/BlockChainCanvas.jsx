@@ -2,11 +2,12 @@ import React from "react";
 import Tech from "../../../components/shared/Tech";
 import Button from "../../../components/shared/Button";
 import ProjectTitle from "../../../components/shared/ProjectTitle";
-import { cuisineShareSkills } from "../../Skills/skillsList";
+import { blockChainSkills, cuisineShareSkills } from "../../Skills/skillsList";
+import SpanBold from "../../../components/shared/SpanBold";
 
 const BlockChainCanvas = () => {
   return (
-    <div className="mt-20 mb-5">
+    <div className="mt-20 mb-5  font-poppins dark:text-white">
       <ProjectTitle title="Recipe Sharing Website" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -16,11 +17,9 @@ const BlockChainCanvas = () => {
           </h1>
           {/* Description  */}
           <p className="text-sm md:text-base">
-            A <span className="font-bold">Full Stack</span> Recipe Sharing
-            website With <span className="font-bold">Dynamic</span> Behavior
-            where you can share and explore recipes, built using{" "}
-            <span className="font-bold">React, Tailwind, and Firebase</span> – a
-            tasty journey online.
+            A <SpanBold>Front end</SpanBold> react website using React and
+            Tailwind. It provides live prices of crypto coins and nfts. The data
+            is collection from <SpanBold>coingecko API</SpanBold>.
           </p>
 
           {/* Features  */}
@@ -34,10 +33,10 @@ const BlockChainCanvas = () => {
               <li>Modern UI</li>
             </div>
           </div>
-          <Tech skills={cuisineShareSkills} index={1} />
+          <Tech skills={blockChainSkills} index={0} />
 
           <div className="mt-14 flex gap-4">
-            <Button className="text-sm md:text-base border border-black text-black py-2 px-7">
+            <Button className="text-sm md:text-base border border-black dark:border-white text-black dark:text-white py-2 px-7">
               Code
             </Button>
             <Button className="text-sm md:text-base bg-gradient-to-r from-[#060109] to-[#180025]  text-white py-2 px-8">

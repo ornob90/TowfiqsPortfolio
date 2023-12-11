@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="bg-[#D9D9D9] relative  z-5 min-h-screen" id="skills ">
+    <div
+      className="bg-[#D9D9D9] relative  z-5 min-h-screen dark:bg-[#141616]"
+      id="skills "
+    >
       <Container className="py-1">
         <SectionHeader name="SKILLS" />
 
@@ -27,7 +30,7 @@ const Skills = () => {
                 className={`text-sm md:text-md lg:text-xl font-generalBold  ${
                   idx === 3 || idx === 4 || idx === 7 || idx === 8
                     ? "lg:text-white z-10"
-                    : ""
+                    : "dark:text-white"
                 }`}
               >
                 {name.toUpperCase()}

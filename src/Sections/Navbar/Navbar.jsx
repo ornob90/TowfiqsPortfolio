@@ -1,16 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../../components/shared/Container";
 import DropDown from "./DropDown";
 import { CiMenuFries } from "react-icons/ci";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-scroll";
 import Button from "../../components/shared/Button";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 const Navbar = () => {
   const navLinks = ["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT"];
 
   const [activeLink, setActiveLink] = useState("ABOUT");
   const [menu, setMenu] = useState(false);
+
+  const [theme, setTheme] = useState("light");
+  const html = document.documentElement;
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme") || "light";
+
+    if (theme) {
+      setTheme(theme);
+      html.classList.add(theme);
+    }
+  }, []);
+
+  const handleTheme = () => {
+    // console.log("clicked");
+
+    if (theme === "light") {
+      html.classList.remove("light");
+      html.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setTheme("dark");
+    } else {
+      html.classList.remove("dark");
+      html.classList.add("light");
+      localStorage.setItem("theme", "light");
+      setTheme("light");
+    }
+  };
 
   const handleActiveLink = (link) => {
     if (link === "HOME") {
@@ -108,8 +137,18 @@ const Navbar = () => {
           >
             CONTACT
           </Link>
-          <li className="px-6 hidden lg:block">
-            <input type="checkbox" className="toggle " checked />
+          <li className="px-6 hidden lg:block ">
+            {theme === "dark" ? (
+              <BsFillSunFill
+                className="text-xl sm:text-3xl md:text-3xl text-white"
+                onClick={handleTheme}
+              />
+            ) : (
+              <BsFillMoonStarsFill
+                className="text-lg sm:text-xl md:text-2xl"
+                onClick={handleTheme}
+              />
+            )}
           </li>
           <li className="lg:hidden w-max" onClick={() => setMenu(!menu)}>
             {menu ? (

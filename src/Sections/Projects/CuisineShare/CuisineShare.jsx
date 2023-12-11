@@ -7,7 +7,7 @@ import { cuisineShareSkills } from "../../Skills/skillsList";
 
 const CuisineShare = () => {
   return (
-    <div className="mt-20 mb-5">
+    <div className="mt-20 mb-5 font-poppins dark:text-white">
       <ProjectTitle title="Recipe Sharing Website" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -55,7 +55,7 @@ const CuisineShare = () => {
           </div>
 
           <div className="mt-14 flex gap-4">
-            <Button className="text-sm md:text-base border border-black text-black py-2 px-7">
+            <Button className="text-sm md:text-base border border-black dark:border-white text-black dark:text-white py-2 px-7">
               Code
             </Button>
             <Button className="text-sm md:text-base bg-black text-[#FACC15] py-2 px-8">

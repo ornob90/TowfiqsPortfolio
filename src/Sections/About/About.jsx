@@ -15,7 +15,7 @@ import Button from "../../components/shared/Button";
 
 const About = () => {
   return (
-    <Container className="hidden lg:block z-10 " id="about">
+    <Container className="hidden lg:block z-10 dark:bg-[#141616]" id="about">
       <SectionHeader name="ABOUT" />
       <div className="min-h-[400px] grid grid-cols-8 grid-rows-10 grid-flow-row-dense mb-12 gap-2">
         {/* image cell */}

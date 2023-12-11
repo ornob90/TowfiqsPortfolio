@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -12,6 +13,7 @@ export default {
         title: "#323741",
         "dark-mode": "#B7B7B7",
       },
+
       fontFamily: {
         generalBold: ["GeneralSansBold", "sans-serif"],
         generalSemibold: ["GeneralSansSemibold", "sans-serif"],

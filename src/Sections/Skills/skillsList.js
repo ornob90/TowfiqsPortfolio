@@ -26,4 +26,9 @@ export const cuisineShareSkills = [
   { id: 6, name: "tailwind", path: "./assets/skills/tailwind.png" },
 ];
 
+export const blockChainSkills = [
+  { id: 3, name: "react", path: "./assets/skills/react.png" },
+  { id: 6, name: "tailwind", path: "./assets/skills/tailwind.png" },
+];
+
 export default skillsList;

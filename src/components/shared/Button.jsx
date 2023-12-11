@@ -1,8 +1,11 @@
 import React from "react";
 
-const Button = ({ children, className }) => {
+const Button = ({ children, className, ...props }) => {
   return (
-    <button className={`active:scale-95 duration-300 font-bold  ${className}`}>
+    <button
+      {...props}
+      className={`active:scale-95 duration-300 font-bold  ${className}`}
+    >
       {children}
     </button>
   );

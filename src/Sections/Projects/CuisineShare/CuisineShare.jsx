@@ -4,11 +4,11 @@ import Button from "../../../components/shared/Button";
 
 const CuisineShare = () => {
   return (
-    <Container className="mt-20 mb-28">
+    <div className="mt-20 mb-28">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className=" lg:w-[90%] mb-8 lg:mb-0">
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-[90%] object-cover"
             src="./cuisine/home.png"
             alt=""
           />
@@ -62,7 +62,7 @@ const CuisineShare = () => {
         <img src="./cuisine/profile.png" alt="" />
         <img src="./cuisine/favorite.png" alt="" />
       </div>
-    </Container>
+    </div>
   );
 };
 

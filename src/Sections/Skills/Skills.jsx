@@ -21,7 +21,7 @@ const Skills = () => {
                 alt=""
                 className={`w-[40%] md:w-[50%] lg:w-auto ${
                   idx === 3 || idx === 4 || idx === 7 || idx === 8 ? "z-10" : ""
-                }`}
+                } ${idx === 2 ? " animate-spin duration-150" : ""}`}
               />
               <p
                 className={`text-sm md:text-md lg:text-xl font-generalBold  ${

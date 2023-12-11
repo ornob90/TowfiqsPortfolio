@@ -1,29 +1,18 @@
 import React from "react";
-import Container from "../../../components/shared/Container";
+import Tech from "../../../components/shared/Tech";
 import Button from "../../../components/shared/Button";
 import ProjectTitle from "../../../components/shared/ProjectTitle";
-import Tech from "../../../components/shared/Tech";
 import { cuisineShareSkills } from "../../Skills/skillsList";
 
-const CuisineShare = () => {
+const BlockChainCanvas = () => {
   return (
     <div className="mt-20 mb-5">
       <ProjectTitle title="Recipe Sharing Website" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div>
-          <div className=" lg:w-[90%] mb-8 lg:mb-0 p-2 bg-yellow-100 h-max rounded-md">
-            <img
-              className="w-full h-[90%] object-cover  rounded-md"
-              src="./cuisine/home.png"
-              alt=""
-            />
-          </div>
-          <Tech skills={cuisineShareSkills} index={1} />
-        </div>
         <div className="">
           <h1 className=" font-generalBold text-2xl mb-4">
-            CUISINE <span className="text-[#FACC15]">SHARE</span>
+            BlockChain <span className="text-[#64208b]">Canvas</span>
           </h1>
           {/* Description  */}
           <p className="text-sm md:text-base">
@@ -37,47 +26,49 @@ const CuisineShare = () => {
           {/* Features  */}
           <div className="mt-8 flex flex-col gap-4  font-generalSemibold text-[10px] md:text-[12px] lg:text-base">
             <div className="grid grid-cols-2 list-outside">
-              <li className="list-inside">Authentication</li>
-              <li className="">Real Time Chat System</li>
+              <li className="list-inside">Live Coins Prices</li>
+              <li className="">Details Information </li>
             </div>
             <div className="grid grid-cols-2 list-outside">
-              <li>Dynamic User Profile</li>
-              <li>Recipe Uploading System</li>
-            </div>
-            <div className="grid grid-cols-2 list-outside">
-              <li>News Feed</li>
-              <li>Drop a Review With Rating</li>
-            </div>
-            <div className="grid grid-cols-2 list-outside">
-              <li>Recipe Bookmarks</li>
-              <li>Fully Responsive</li>
+              <li>Responsive Design</li>
+              <li>Modern UI</li>
             </div>
           </div>
+          <Tech skills={cuisineShareSkills} index={1} />
 
           <div className="mt-14 flex gap-4">
             <Button className="text-sm md:text-base border border-black text-black py-2 px-7">
               Code
             </Button>
-            <Button className="text-sm md:text-base bg-black text-[#FACC15] py-2 px-8">
+            <Button className="text-sm md:text-base bg-gradient-to-r from-[#060109] to-[#180025]  text-white py-2 px-8">
               Live
             </Button>
+          </div>
+        </div>
+        <div className="flex flex-col justify-between">
+          <div className=" lg:w-[90%] mb-8 lg:mb-0  h-max rounded-md ">
+            <img
+              className="w-full h-full object-cover  rounded-md"
+              src="./blockchain/home.PNG"
+              alt=""
+            />
           </div>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-16">
-        <div className="p-2 bg-yellow-200 rounded-md h-max">
-          <img className="rounded-md" src="./cuisine/newspeed.png" alt="" />
+        <div className=" rounded-md h-max">
+          <img className="rounded-md" src="./blockchain/table.png" alt="" />
         </div>
-        <div className="p-2 bg-yellow-200 rounded-md h-max">
-          <img className="rounded-md" src="./cuisine/profile.png" alt="" />
+        <div className=" rounded-md h-max">
+          <img className="rounded-md" src="./blockchain/trending.PNG" alt="" />
         </div>
-        <div className="p-2 bg-yellow-200 rounded-md h-max">
-          <img className="rounded-md" src="./cuisine/favorite.png" alt="" />
+        <div className=" rounded-md h-max">
+          <img className="rounded-md" src="./blockchain/creator.PNG" alt="" />
         </div>
       </div>
     </div>
   );
 };
 
-export default CuisineShare;
+export default BlockChainCanvas;

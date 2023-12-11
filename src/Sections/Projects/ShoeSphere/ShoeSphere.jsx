@@ -1,9 +1,16 @@
 import React from "react";
 import Container from "../../../components/shared/Container";
+import SpanBold from "../../../components/shared/SpanBold";
+import { shoeSphereSkills } from "../../Skills/skillsList";
+import Button from "../../../components/shared/Button";
+import ProjectTitle from "../../../components/shared/ProjectTitle";
+import Tech from "../../../components/shared/Tech";
 
 const ShoeSphere = () => {
   return (
-    <section className="mt-28 mb-40">
+    <section className="mt-5 mb-40">
+      <ProjectTitle title="E-Commerce" />
+
       {/* First Grid */}
       <div className="flex flex-col flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Others Image */}
@@ -50,20 +57,57 @@ const ShoeSphere = () => {
       </div>
 
       {/* Description */}
-      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2">
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 ">
         {/* About and Tech used */}
-        <div className="">
+        <div className="flex flex-col justify-between">
           <p className="w-[90%] font-poppins">
-            This is a Full stack E-Commerce website built using the MERN
-            (MongoDB, Express.js, React.js, Node.js) stack. The platform
-            provides a secure authentication system, efficient product
+            This is a <SpanBold>Full stack E-Commerce</SpanBold> website built
+            using the{" "}
+            <SpanBold>MERN (MongoDB, Express.js, React.js, Node.js)</SpanBold>{" "}
+            stack. The platform provides a secure{" "}
+            <SpanBold>authentication</SpanBold> system, efficient product
             exploration, shopping cart management, a seamless checkout process
-            with stripe payment system and ADMIN DASHBOARD.
+            with <SpanBold>stripe payment system</SpanBold> and{" "}
+            <SpanBold>ADMIN DASHBOARD</SpanBold>.
           </p>
+
+          {/* Tech Used  */}
+          <Tech skills={shoeSphereSkills} />
+
+          {/* Call To action button */}
+          <div className="mt-14 flex gap-4">
+            <Button className="text-sm md:text-base border border-black text-black py-2 px-7">
+              Code
+            </Button>
+            <Button className="text-sm md:text-base bg-black text-white py-2 px-8">
+              Live
+            </Button>
+          </div>
         </div>
 
         {/* Features */}
-        <div></div>
+        <div className="font-poppins flex flex-col justify-between">
+          <h1 className="font-semibold text-lg mb-5">It Provides,</h1>
+
+          <div className="flex flex-col gap-4  font-generalSemibold text-[10px] md:text-[12px] lg:text-base">
+            <div className="grid grid-cols-2 list-outside">
+              <li className="list-inside">Admin Dashboard</li>
+              <li className="">Payment System</li>
+            </div>
+            <div className="grid grid-cols-2 list-outside">
+              <li>User Dashboard</li>
+              <li>Cart System</li>
+            </div>
+            <div className="grid grid-cols-2 list-outside">
+              <li>Fully Responsive</li>
+              <li>Parallel Filtering and Search</li>
+            </div>
+            <div className="grid grid-cols-2 list-outside">
+              <li>Order Management</li>
+              <li>Bookmarked products</li>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

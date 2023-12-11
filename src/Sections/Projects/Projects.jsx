@@ -3,6 +3,7 @@ import Container from "../../components/shared/Container";
 import SectionHeader from "../../components/shared/SectionHeader";
 import CuisineShare from "./CuisineShare/CuisineShare";
 import ShoeSphere from "./ShoeSphere/ShoeSphere";
+import BlockChainCanvas from "./BlockChainCanvas/BlockChainCanvas";
 
 const Projects = () => {
   return (
@@ -13,6 +14,7 @@ const Projects = () => {
       <SectionHeader name="PROJECTS" z={30} />
       <ShoeSphere />
       <CuisineShare />
+      <BlockChainCanvas />
     </Container>
   );
 };

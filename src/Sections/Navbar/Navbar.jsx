@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 left-0 bg-nav z-10">
+    <nav className="sticky top-0 left-0 bg-nav z-20">
       <Container className="flex justify-between items-center text-[14px] font-generalBold  ">
         <img
           src="/assets/logo.png"

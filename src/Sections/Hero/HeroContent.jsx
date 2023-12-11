@@ -27,12 +27,28 @@ const HeroContent = () => {
 
         <div className="order-2 sm:order-1 col-span-6  flex justify-center items-center sm:block">
           <Button className="py-2  bg-white text-black border border-secondary w-full sm:w-auto sm:px-12 ">
-            HIRE ME
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={700}
+              to="contact"
+            >
+              HIRE ME
+            </Link>
           </Button>
         </div>
 
         <Button className="py-2 order-1 bg-[rgba(0, 0, 0, 0.46)] border border-white sm:px-8 col-span-3">
-          MY WORK
+          <Link
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={700}
+            to="projects"
+          >
+            MY WORK
+          </Link>
         </Button>
       </div>
     </div>

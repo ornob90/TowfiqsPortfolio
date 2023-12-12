@@ -4,11 +4,12 @@ import Button from "../../../components/shared/Button";
 import ProjectTitle from "../../../components/shared/ProjectTitle";
 import { blockChainSkills, cuisineShareSkills } from "../../Skills/skillsList";
 import SpanBold from "../../../components/shared/SpanBold";
+import { CryptoGithub, CryptoLive } from "../../../links/links";
 
 const BlockChainCanvas = () => {
   return (
     <div className="mt-20 mb-5  font-poppins dark:text-white">
-      <ProjectTitle title="Recipe Sharing Website" />
+      <ProjectTitle title="Live Crypto Coin Price" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="">
@@ -36,12 +37,16 @@ const BlockChainCanvas = () => {
           <Tech skills={blockChainSkills} index={0} />
 
           <div className="mt-14 flex gap-4">
-            <Button className="text-sm md:text-base border border-black dark:border-white text-black dark:text-white py-2 px-7">
-              Code
-            </Button>
-            <Button className="text-sm md:text-base bg-gradient-to-r from-[#060109] to-[#180025]  text-white py-2 px-8">
-              Live
-            </Button>
+            <a href={CryptoLive} target="_blank" rel="noopener noreferrer">
+              <Button className="text-sm md:text-base border border-black dark:border-white text-black dark:text-white py-2 px-7">
+                Code
+              </Button>
+            </a>
+            <a href={CryptoGithub} target="_blank" rel="noopener noreferrer">
+              <Button className="text-sm md:text-base bg-gradient-to-r from-[#060109] to-[#180025]  text-white py-2 px-8">
+                Live
+              </Button>
+            </a>
           </div>
         </div>
         <div className="flex flex-col justify-between">

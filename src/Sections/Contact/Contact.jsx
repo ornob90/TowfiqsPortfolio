@@ -4,7 +4,7 @@ import Container from "../../components/shared/Container";
 
 const Contact = () => {
   return (
-    <div className="min-h-[80vh] bg-black-dark">
+    <div className="min-h-[80vh] bg-black-dark" id="contact">
       <Container>
         <SectionHeader name="CONTACT" />
         <p className="text-[#6F6F6F] text-[12px] mt-10">

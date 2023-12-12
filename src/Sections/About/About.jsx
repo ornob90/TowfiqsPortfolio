@@ -12,8 +12,19 @@ import { BiLogoFacebookCircle } from "react-icons/bi";
 import { AiFillPhone } from "react-icons/ai";
 import { SlSocialLinkedin } from "react-icons/sl";
 import Button from "../../components/shared/Button";
+import resume from "../../assets/resume/kazi_towfiq_web_developer_resume.pdf";
 
 const About = () => {
+  const downloadPdf = () => {
+    const pdfUrl = "kazi_towfiq_web_developer_resume.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "document.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <Container className="hidden lg:block z-10 dark:bg-[#141616]" id="about">
       <SectionHeader name="ABOUT" />
@@ -120,15 +131,22 @@ const About = () => {
 
         {/* resume cell */}
         <div className="border border-black col-span-2 row-span-2 resume font-generalBold flex justify-between flex-col p-2 bg-black-dark rounded-lg text-white">
-          <BsFillPersonLinesFill className="text-2xl" />
-          <p className="text-light-gray text-[12px]"> LEARN MORE ABOUT ME</p>
-          <div className="flex justify-between items-center">
-            <h2 className="text-xl">
-              SEE MY <span className="text-secondary">RESUME</span>
-            </h2>
+          <a
+            href="https://drive.google.com/file/d/1eVeLsbgaP9_KygmmQFQaenpzi0kCmk76/view?usp=drive_link"
+            download="kazi_towfiq_web_developer_resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsFillPersonLinesFill className="text-2xl" />
+            <p className="text-light-gray text-[12px]"> LEARN MORE ABOUT ME</p>
+            <div className="flex justify-between items-center">
+              <h2 className="text-xl">
+                SEE MY <span className="text-secondary">RESUME</span>
+              </h2>
 
-            <FaArrowRightFromBracket className="text-2xl " />
-          </div>
+              <FaArrowRightFromBracket className="text-2xl " />
+            </div>
+          </a>
         </div>
 
         {/* contact cell */}

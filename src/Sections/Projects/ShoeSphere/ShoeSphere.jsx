@@ -5,6 +5,7 @@ import { shoeSphereSkills } from "../../Skills/skillsList";
 import Button from "../../../components/shared/Button";
 import ProjectTitle from "../../../components/shared/ProjectTitle";
 import Tech from "../../../components/shared/Tech";
+import { ShoeClient, ShoeLive, ShoeServer } from "../../../links/links";
 
 const ShoeSphere = () => {
   return (
@@ -76,12 +77,23 @@ const ShoeSphere = () => {
 
           {/* Call To action button */}
           <div className="mt-14 flex gap-4">
-            <Button className="text-sm md:text-base border border-black dark:border-white text-black dark:text-white py-2 px-7">
-              Code
-            </Button>
-            <Button className="text-sm md:text-base bg-black text-white py-2 px-8">
-              Live
-            </Button>
+            <a href={ShoeClient} target="_blank" rel="noopener noreferrer">
+              <Button className="text-sm md:text-base border border-black dark:border-white text-black dark:text-white py-2 px-7">
+                Client
+              </Button>
+            </a>
+
+            <a href={ShoeServer} target="_blank" rel="noopener noreferrer">
+              <Button className="text-sm md:text-base border border-black dark:border-white text-black dark:text-white py-2 px-7">
+                Server
+              </Button>
+            </a>
+
+            <a href={ShoeLive} target="_blank" rel="noopener noreferrer">
+              <Button className="text-sm md:text-base bg-black text-white py-2 px-8">
+                Live
+              </Button>
+            </a>
           </div>
         </div>
 

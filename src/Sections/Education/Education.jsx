@@ -40,9 +40,9 @@ const Education = () => {
   ];
 
   return (
-    <Container className="mb-16 sm:mb-28 font-poppins">
+    <Container className="mb-16 sm:mb-28 font-poppins dark:text-white">
       <SectionHeader name="EDUCATION" />
-      <div className="flex flex-col gap-2 justify-center items-center min-h-[200px] mt-16 md:mt-20">
+      <div className="flex flex-col gap-2 justify-center items-center min-h-[200px] mt-16 md:mt-20 ">
         {/* Single Accordion Row  */}
         {education.map(({ name, status, duration, gpa, institution }, idx) => (
           <div
@@ -50,18 +50,18 @@ const Education = () => {
             onClick={() => handleSelectedRow(idx)}
             className={`w-full  sm:w-[80%] bg-[#E5E7EB] duration-300 cursor-pointer ${
               selectedRow === idx ? "h-[250px]" : "h-[50px]"
-            } relative flex justify-between px-4 pt-[15px]`}
+            } relative flex justify-between px-4 pt-[15px] dark:bg-[#343434]`}
           >
             <p className="text-sm sm:text-md md:text-lg lg:text-xl">{name}</p>
             {selectedRow === idx ? (
-              <FaMinus className="text-gray-500" />
+              <FaMinus className="text-gray-500 dark:text-gray-300" />
             ) : (
-              <FaPlus className="text-gray-500" />
+              <FaPlus className="text-gray-500 dark:text-gray-300" />
             )}
             <div
               className={`bg-[#E5E7EB] w-full duration-300 ${
-                selectedRow === idx ? "h-full" : "h-0"
-              } h-[200px] absolute top-[50px] left-0 px-4 flex flex-col justify-center`}
+                selectedRow === idx ? "h-full mb-4" : "h-0"
+              }  absolute top-[50px] left-0 px-4 flex flex-col justify-center dark:bg-[#343434] mb-2`}
             >
               <p
                 className={`${

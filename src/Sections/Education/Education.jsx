@@ -75,7 +75,7 @@ const Education = () => {
                   selectedRow === idx ? "" : "opacity-0"
                 } duration-300`}
               >
-                <SpanBold>Duration:</SpanBold> {duration}5
+                <SpanBold>Duration:</SpanBold> {duration}
               </p>
               <p
                 className={`${

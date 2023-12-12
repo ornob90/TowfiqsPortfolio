@@ -49,7 +49,7 @@ const BlockChainCanvas = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between mt-10 lg:mt-0">
           <div className=" lg:w-[90%] mb-8 lg:mb-0  h-max rounded-md ">
             <img
               className="w-full h-full object-cover  rounded-md"

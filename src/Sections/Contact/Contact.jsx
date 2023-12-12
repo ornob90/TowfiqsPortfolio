@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import SectionHeader from "../../components/shared/SectionHeader";
 import Container from "../../components/shared/Container";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 const Contact = () => {
   const form = useRef();
 
@@ -22,6 +23,9 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          toast.success(
+            "Thank you for contacting me. I'll get back to you as soon as possible!!. Thank you"
+          );
           console.log(result.text);
         },
         (error) => {

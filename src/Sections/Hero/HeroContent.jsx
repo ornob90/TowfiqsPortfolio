@@ -9,7 +9,7 @@ const HeroContent = () => {
         Idea to <span className="text-secondary">Reality</span>
       </h1>
       <h3 className="text-2xl sm:text-3xl md:text-5xl pb-8">
-        Your <span className="text-secondary">Frontend Developer</span>
+        Your <span className="text-secondary">Web Developer</span>
       </h3>
 
       <div className="grid grid-cols-6 gap-x-1 gap-y-2 sm:flex sm:justify-center sm:items-center  sm:gap-8 text-[10px] sm:text-base w-[80%] sm:w-full">

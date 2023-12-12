@@ -101,7 +101,7 @@ const Navbar = () => {
           <Link
             spy={true}
             smooth={true}
-            offset={300}
+            offset={600}
             duration={500}
             onClick={() => handleActiveLink("SKILLS")}
             to="skills"

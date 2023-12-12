@@ -13,6 +13,7 @@ import { AiFillPhone } from "react-icons/ai";
 import { SlSocialLinkedin } from "react-icons/sl";
 import Button from "../../components/shared/Button";
 import resume from "../../assets/resume/kazi_towfiq_web_developer_resume.pdf";
+import { Link } from "react-scroll";
 
 const About = () => {
   const downloadPdf = () => {
@@ -79,11 +80,19 @@ const About = () => {
                 <p className="bg-white w-[20px] h-[20px] rounded-full"></p>
               </div>
             </div>
-            <div className="bg-dark">
-              <Button className="flex items-center gap-2 bg-black-dark rounded-lg py-2 px-4 text-sm">
-                More <FaArrowRightFromBracket />
-              </Button>
-            </div>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              to="projects"
+            >
+              <div className="bg-dark">
+                <Button className="flex items-center gap-2 bg-black-dark rounded-lg py-2 px-4 text-sm">
+                  More <FaArrowRightFromBracket />
+                </Button>
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -91,7 +100,15 @@ const About = () => {
         <div className="border border-black col-span-4 row-span-4 skills p-3 bg-black-gray text-white rounded-lg flex flex-col justify-between ">
           <div className="flex justify-between mb-6">
             <h2 className="text-2xl font-generalBold">SKILLS</h2>
-            <FaArrowRightFromBracket className="text-2xl " />
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              to="skills"
+            >
+              <FaArrowRightFromBracket className="text-2xl " />
+            </Link>
           </div>
           <div className="flex justify-between w-[95%] items-end">
             <img src="./assets/icons/js-sm.png" alt="" className="w-[7%]" />

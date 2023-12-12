@@ -3,7 +3,7 @@ import Container from "../../components/shared/Container";
 import DropDown from "./DropDown";
 import { CiMenuFries } from "react-icons/ci";
 import { MdOutlineClose } from "react-icons/md";
-import { Link } from "react-scroll";
+import { Events, Link, scrollSpy } from "react-scroll";
 import Button from "../../components/shared/Button";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
@@ -101,7 +101,7 @@ const Navbar = () => {
           <Link
             spy={true}
             smooth={true}
-            offset={600}
+            offset={-100}
             duration={500}
             onClick={() => handleActiveLink("SKILLS")}
             to="skills"

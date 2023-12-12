@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <div
       className="bg-[#D9D9D9] relative  z-5 min-h-screen dark:bg-[#141616]"
-      id="skills "
+      id="skills"
     >
       <Container className="py-1">
         <SectionHeader name="SKILLS" />

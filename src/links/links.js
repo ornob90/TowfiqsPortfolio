@@ -3,7 +3,8 @@ const GITHUB_LINK = "https://github.com/ornob90";
 export const FB_LINK = "https://www.facebook.com/Towfiquer.ornob.7/";
 export const LINKEDIN_LINK =
   "https://www.linkedin.com/in/kazi-towfiq-7b0a08266/";
-export const RESUME_LINK = "";
+export const RESUME_LINK =
+  "https://drive.google.com/file/d/1eVeLsbgaP9_KygmmQFQaenpzi0kCmk76/view?usp=drive_link";
 
 export const ShoeClient = "https://github.com/ornob90/ShoeSphere";
 export const ShoeServer = "https://github.com/ornob90/shoesphere-server";
